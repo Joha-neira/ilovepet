@@ -107,3 +107,37 @@ a{
     display: inline;
     border-right: solid 1px;
 }
+/* CSS pagina planes */
+.contenedor-desc-planes{
+    margin-top: 20px;
+    color: #6dd1fd;
+    text-align: center;
+    font-family: 'lato', sans-serif;
+}
+.contenedor-planes{
+    border: solid 1px;
+    border-color: gainsboro;
+    border-radius: 15px;
+    height: 500px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;   
+    display: table;
+    table-layout: fixed; 
+}
+.plan-vet{
+    border-right: solid 1px;
+    border-color: gainsboro;
+    display: table-cell;
+    text-align: center;
+    margin: 10px;
+    color: #6dd1fd;
+    text-align: center;
+    font-family: 'lato', sans-serif;
+}
+#heart::before{
+    font-family: "Font Awesome 5 Free";
+    content:  "\f21e";
+    font-size: 25px;  
+    font-weight: 900; 
+}
