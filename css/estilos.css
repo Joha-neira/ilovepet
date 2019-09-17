@@ -1,0 +1,109 @@
+*{
+    margin:0;
+}
+.banner{
+    background:deepskyblue;
+    color:azure;
+    font-family: 'lato', sans-serif;
+    font-weight: bolder;
+    font-size: 22px;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.tab-menu{
+    border-left: solid 1px;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.contenedor{
+    max-width: 1490px;
+    width: 95%;
+    margin: auto;
+    background: gainsboro;
+}
+.slick-dots li button:before{
+    font-size: 32px;
+    color: deepskyblue;
+    margin-bottom: 25px;
+}
+.slider{
+    border-radius: 15px;
+    height: 500px;
+}
+.slick-prev:before, .slick-next:before{
+    color:#6dd1fd;
+}
+.slick-prev:before, .slick-next:before { 
+    font-family: "slick"; 
+    font-size: 40px; 
+    line-height: 1; 
+    color: deepskyblue; 
+    opacity: 0.75; 
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-prev:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0a8";
+    font-size: 22px;
+    font-weight: 900;
+}  
+.slick-next::before {
+    font-family: "Font Awesome 5 Free";
+    content:  "\f0a9";
+    font-size: 22px;  
+    font-weight: 900;      
+}  
+#wsp::before{
+    font-family: "Font Awesome 5 Brands";
+    content:  "\f232";
+    font-size: 22px;  
+    font-weight: 400;  
+}
+#ttr::before{
+    font-family: "Font Awesome 5 Brands";
+    content:  "\f099";
+    font-size: 22px;  
+    font-weight: 400;  
+
+}
+#fcbk::before{
+    font-family: "Font Awesome 5 Brands";
+    content:  "\f09a";
+    font-size: 22px;  
+    font-weight: 400;  
+
+}
+#inst::before{
+    font-family: "Font Awesome 5 Brands";
+    content:  "\f16d";
+    font-size: 22px;  
+    font-weight: 400;  
+}
+.servicios-contacto{
+    margin-top: 90px;
+    text-align: center;
+    font-size: 20px;
+    color: deepskyblue;
+    font-family: 'lato', sans-serif;
+    margin-top: 100px;
+}
+.footer{
+    margin-top: 300px;
+}
+.footer-info{
+    height: 180px;
+    background: #6dd1fd;
+    margin-top: -5px;
+}
+.lista-servicios{
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    text-align: left;
+}
+#div5{
+    display: inline;
+    border-right: solid 1px;
+}
