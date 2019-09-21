@@ -6,7 +6,12 @@
     color:azure;
     font-family: 'lato', sans-serif;
     font-weight: bolder;
-    font-size: 22px;
+    font-size: 21px;
+}
+#link-registrar-usuario{
+    color:blue;
+    font-size: 12px;
+    text-decoration: underline;
 }
 a{
     text-decoration: none;
@@ -81,6 +86,12 @@ a{
     font-size: 22px;  
     font-weight: 400;  
 }
+#logo-inicio-sesion::before{
+    font-family: "Font Awesome 5 Free";
+    content:  "\f007";
+    font-size: 22px;  
+    font-weight: 900;
+}
 .servicios-contacto{
     margin-top: 90px;
     text-align: center;
@@ -100,7 +111,6 @@ a{
 .lista-servicios{
     display: inline-block;
     text-decoration: none;
-    list-style: none;
     text-align: left;
 }
 #div5{
