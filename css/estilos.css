@@ -107,7 +107,19 @@ a{
     height: 180px;
     background: #6dd1fd;
     margin-top: -5px;
+    color: #fff;
+    font-family: 'lato';
 }
+.footer-info .part1 , .part2{
+    background: #6dd1fd;
+    margin: 20px 10px 20px 30px;
+    border-right: 1px solid white;
+}
+.footer-info .part3, .part2{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
 .lista-servicios{
     display: inline-block;
     text-decoration: none;
@@ -151,3 +163,63 @@ a{
     font-size: 25px;  
     font-weight: 900; 
 }
+/* Formulario de registro */
+.wrap{
+    width: 100%;
+    height: 100%;
+    color: #6dd1fd;
+    margin-top: 40px;
+}
+.contenedor-formulario {
+    width: 90%;
+    max-width: 1280px;
+    padding: 40px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0px 0px 3px grey; 
+    border-radius: 15px;
+    font-family: 'lato',sans-serif;
+    font-size: 24px;
+}
+.contenedor-formulario .formulario {
+    width: 100%;
+    margin: auto; 
+}
+.label{
+    width: 230px;
+    float: left;
+}
+input, select{
+    border: none; /* <-- This thing here */
+    border:solid 1px #ccc;
+    border-radius: 10px;
+    height: 35px;
+    font-family: 'lato',sans-serif;
+    font-size: 24px;
+    width: calc(100% - 250px);
+}
+.izq{
+    float: left;
+    width: 80px;
+}
+.contenedor-formulario .formulario .input-group{
+    line-height: 40px;
+    margin-top: 40px;
+}
+.contenedor-formulario .formulario input[type="submit"] {
+    border: none;
+    margin-left: -300px;
+    background: #6dd1fd;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'lato';
+    font-size: 24px;
+    width: 100%;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .contenedor-formulario .formulario input[type="submit"]:hover {
+      background: #2cc941; }
+/* Fin Formulario de registro */
+
