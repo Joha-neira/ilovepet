@@ -40,6 +40,16 @@ a{
     width: 98%;
     margin: auto;
 }
+.error-control {
+    border: 1px solid red;
+}
+label.error {
+color: red;
+width: 300px;
+font-size: 0.8em;
+margin-top: -5px;
+margin-bottom: 10px;
+}
 .slider >div >img{
     height: auto;
     min-height: 169px;

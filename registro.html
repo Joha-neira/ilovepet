@@ -15,8 +15,11 @@
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
     <script type="text/javascript" src="slick/slick.js"></script>
     <script src="JS/scripts.js"></script>
+    <script src="JS/comunas.js"></script>
 </head>
 
 <body>
@@ -62,59 +65,69 @@
     <div class="wrap">
         <!-- Formulario -->
         <div class="contenedor-formulario">
-            <form action="" class="formulario" name="formulario_registro" method="GET">
+            <form action="" class="formulario" id="formulario_registro" name="formulario_registro" method="GET">
                 <div class="row">
                     <div class="div-izq col-lg-6">
                         <div class="input-group">
                             <label class="label" for="rut">RUT:</label>
-                            <input type="text" name="rut" id="rut">
+                            <input type="text" required name="rut" id="rut">
                         </div>
                         <div class="input-group">
                             <label class="label" for="nombre">Nombre completo:</label>
-                            <input type="text" name="nombre" id="nombre">
+                            <input type="text" required name="nombre" id="nombre">
                         </div>
                         <div class="input-group">
                             <label class="label" for="bday">Fecha de Nacimiento:</label>
-                            <input type="date" name="bday" id="bday">
+                            <input type="date" required max="2099-01-01" name="bday" id="bday">
                         </div>
                         <div class="input-group">
-                            <label class="label" for="nombre">Nacionalidad:</label>
+                            <label class="label" for="nac">Nacionalidad:</label>
                             <select name="nacionalidad" id="nacionalidad">
                                 <option value="Chilena" selected>Chilena</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Colombiana">Colombiana</option>
                             </select>
                         </div>
                         <div class="input-group">
-                            <label class="label" for="nro">Número de contacto:</label>
-                            <input type="text" name="nro" id="nro">
+                            <label class="label" for="reg">Región:</label>
+                            <select name="regiones" id="regiones"></select>
                         </div>
                         <div class="input-group">
-                            <label class="label" for="cel">Celular:</label>
-                            <input type="text" name="cel" id="cel" placeholder="+56 ">
+                            <label class="label" for="com">Comunas:</label>
+                            <select name="comunas" id="comunas"></select>
+                        </div>
+                        <div class="input-group">
+                            <label class="label" for="email">Correo:</label>
+                            <input type="email" name="email" id="email" required placeholder="correo@dominio.cl">
                         </div>
                     </div>
                     <div class="div-der col-lg-6">
                         <div class="input-group">
+                            <label class="label" for="nro">Número de contacto:</label>
+                            <input type="number" required name="nro" id="nro">
+                        </div>
+                        <div class="input-group">
+                            <label class="label" for="cel">Celular:</label>
+                            <input type="number" name="cel" id="cel" required placeholder="569 1234 5678">
+                        </div>
+                        <div class="input-group">
                             <label class="label" for="ofi">Teléfono Oficina:</label>
-                            <input type="text" name="ofi" id="ofi" placeholder="Opcional">
+                            <input type="number" name="ofi" id="ofi"  placeholder="Opcional">
                         </div>
-                        <div class="input-group">
+                        <div class="input-group">   
                             <label class="label" for="prof">Profesión :</label>
-                            <input type="text" name="prof" id="prof" placeholder="Opcional">
-                        </div>
-                        <div class="input-group">
-                            <label class="label" for="email">Correo:</label>
-                            <input type="email" name="email" id="email">
+                            <input type="text" name="prof" id="prof"  placeholder="Opcional">
                         </div>
                         <div class="input-group">
                             <label class="label" for="pass">Contraseña:</label>
-                            <input type="password" name="pass" id="pass">
+                            <input type="password" required name="pass" id="pass">
                         </div>
                         <div class="input-group">
                             <label class="label" for="pass2">Repetir Contraseña:</label>
-                            <input type="password" name="pass2" id="pass2">
+                            <input type="password" required name="pass2" id="pass2">
                         </div>
                         <div class="input-group checkbox">
-                            <input class="izq" type="checkbox" name="terminos" id="terminos" value="true">
+                            <input class="izq" required type="checkbox" name="terminos" id="terminos">
                             <label class="der" for="terminos">Acepto términos y condiciones</label>
                         </div><br>
                         <br>
@@ -122,6 +135,7 @@
                     </div>
                 </div>
             </form>
+            <script src="JS/validaciones.js"></script>
         </div>
     </div>
 </body>
