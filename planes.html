@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Eczar&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="slick/slick.js"></script>
@@ -22,21 +23,21 @@
     <!-- menu de navegacion principal-->
     <div class="banner">
         <div class="row middle-xs banner">
-            <div class="col-xs-12 col-md-3 col-lg-3 center-xs middle-xs ">
+            <div class="col-xs-12 col-md-3 center-xs middle-xs logo-ilovepet">
                 <!-- <img src="img/logo.png" alt-text="logo" style="height: 64px;"> -->
-                "Logo I-love-Pet"
+                I Love Pet <i class="fas fa-paw"></i>
             </div>
-            <div class="row col-xs-12 col-md-9 col-lg-9 middle-xs">
+            <div class="row col-xs-12 col-md-9 middle-xs">
                 <div class="tab-menu center-xs col-xs-12 col-md-2 middle-xs">
                     <br>
                     <a href="home.html" rel="noopener noreferrer">Inicio</a>
                     <br><br>
                 </div>
                 <div class="tab-menu col-xs-12 col-md-2 center-xs middle-xs">
-                    <br>
+                    <br>    
                     <a href="planes.html" rel="noopener noreferrer">Planes</a>
                 </div>
-                <div class="tab-menu col-xs-12 col-md-2 center-xs middle-xs">
+                <div class="tab-menu col-xs-12 col-md-2 col-lg-3 center-xs middle-xs">
                     <br>
                     <a href="quienes-somos.html" rel="noopener noreferrer">Quienes Somos</a>
                     <br><br>
@@ -46,9 +47,9 @@
                     <a href="contactanos.html" rel="noopener noreferrer">Contacto</a>
                     <br><br>
                 </div>
-                <div class="tab-menu login col-xs-12 col-md-4 center-xs middle-xs">
+                <div class="tab-menu login col-xs-12 col-md-4 col-lg-3 center-xs middle-xs">
                     <br>
-                    <a href="" id="logo-inicio-sesion" rel="noopener noreferrer"> Inicia Sesión</a><br>
+                    <button class="btn-abrir-popup" id="btn-abrir-popup"><p id="logo-inicio-sesion"> Inicia Sesión</p></button><br>
                     <a href="registro.html" id="link-registrar-usuario"> ¿No estás registrado? Crea tu cuenta</a>
                     <br><br>
                 </div>
@@ -107,24 +108,49 @@
             </div>
         </div>
     </div>
-    <!-- footer de la página, compuesto por una imagen + datos de la veterinaria -->
-    <div class="footer">
-            <img src="img/footer-bg.jpg" alt="" width="100%">
+    <!-- overlay login -->
+    <div class="overlay" id="overlay">
+        <div class="popup" id="popup">
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            <h3>Inicia Sesión</h3>
+            <h4>en nuestra plataforma</h4>
+            <form action="">
+                <div class="contenedor-inputs">
+                    <input type="text" placeholder="Usuario">
+                    <input type="password" placeholder="Contraseña">
+                </div>
+                <input type="submit" class="btn-submit" value="Entrar">
+            </form>
         </div>
-        <div class="row footer-info col-xs-12">
-            <!-- Aquí se contemplarán datos varios de la veterinaria en general -->
-            <div class="part1 col-xs-12 col-sm-4">
-                <h4>Casa central: </h4><br>
-                <p>Dirección: Álvarez 2336 <br> Viña del Mar <br> Región de Valparaíso
-                    <br> Teléfono: (32) 226 8600</p>
-            </div>
-            <div class="part2 col-xs-12 col-sm-4">
-                <h4>Información</h4>
-            </div>
-            <div class="part3 col-xs-12 col-sm-4">
-                <h4>Link de Interés</h4>
-            </div>
-        </div>
+    </div>
+   <!-- footer de la página, compuesto por una imagen + datos de la veterinaria -->
+   <div class="footer">
+    <img src="img/footer-bg.jpg" alt="" width="100%">
+</div>
+<div class="row footer-info col-xs-12">
+    <!-- Aquí se contemplarán datos varios de la veterinaria en general -->
+    <div class="part1 col-xs-12 col-sm-4">
+        <h4>Casa central: </h4><br>
+        <p>Dirección: Álvarez 2336 <br> Viña del Mar <br> Región de Valparaíso
+            <br> Teléfono: (32) 226 8600</p>
+    </div>
+    <div class="part2 col-xs-12 col-sm-4">
+        <h4>Mapa del sitio:</h4><br>
+        <a href="home.html">Inicio</a><br>
+        <a href="planes.html">Conoce nuestros planes</a><br>
+        <a href="quienes-somos.html">Quienes somos</a><br>
+        <a href="contactanos.html">Contactanos</a><br>
+        <a href="registro.html">Registrate</a><br>
+    </div>
+    <div class="part3 col-xs-12 col-sm-4">
+        <h4>Links de Interés:</h4><br>
+        <a href="https://registratumascota.cl/inicio.xhtml">Registro nacional de tenencia responsable</a><br>
+        <a href="https://www.registrocivildemascotas.cl">Registro civil de mascotas</a><br>
+        <a href="https://registratumascota.cl/inicio.xhtml">Comunidad Mascotas Online</a><br>
+        <a href="https://www.cuidamelo.cl/">Encarga tu mascota</a><br>
+        <a href="https://www.latam.com/es_cl/informacion-para-tu-viaje/como-viajar-con-tu-mascota/?ds_rl=1270154&ds_rl=1270154&gclid=EAIaIQobChMIm7ifybbq5AIVjQ2RCh3MIQZ-EAAYASAAEgIHmPD_BwE&gclsrc=aw.ds">Viaja con tu mascota</a>
+    </div>
+        <script src="JS/scripts.js"></script>
 </body>
 
 </html>

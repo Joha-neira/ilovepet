@@ -8,6 +8,10 @@
     font-weight: bolder;
     font-size: 21px;
 }
+.logo-ilovepet{
+    font-size: 40px;
+    font-family: 'Eczar', serif;
+}
 #link-registrar-usuario{
     color:blue;
     font-size: 12px;
@@ -128,7 +132,7 @@ margin-bottom: 10px;
     margin-top: 100px;
 }
 .footer{
-    margin-top: 300px;
+    margin-top: 150px;
 }
 .footer-info{
     background: #6dd1fd;
@@ -140,7 +144,7 @@ margin-bottom: 10px;
     background: #6dd1fd;
     padding: 20px;
     left: 10%;
-    height: 150px;
+    height: 180px;
 }
 .footer-info .part3, .part2{
     padding:20px;
@@ -256,7 +260,6 @@ input, select{
     background: #6dd1fd;
     color: #fff;
     cursor: pointer;
-    display: inline-block;
     font-family: 'lato';
     font-size: 24px;
     width: 50%;
