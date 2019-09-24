@@ -1,6 +1,4 @@
-Tareas faltantes
--Login
--Registro de persona jurídica y validar formulario de registro persona natural
+Tareas faltante
 -Página de contacto, la cual contiene los datos de de contacto, algunas sucursales y redes sociales
 -Información faltante en footer del sitio y en planes donde hay que definir los servicios y nombres de cada uno de ellos
 -Agregar funciones de JS al menos 5 se piden en la entrega
