@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Eczar&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="slick/slick.js"></script>
+    <script src="slick/slick.js"></script>
     <script src="JS/scripts.js"></script>
 </head>
 
@@ -49,7 +50,7 @@
                 </div>
                 <div class="tab-menu login col-xs-12 col-md-4 col-lg-3 center-xs middle-xs">
                     <br>
-                    <button class="btn-abrir-popup" id="btn-abrir-popup"><p id="logo-inicio-sesion"> Inicia Sesión</p></button><br>
+                    <button class="btn-abrir-popup" id="btn-abrir-popup">Inicia Sesión</button><br>
                     <a href="registro.html" id="link-registrar-usuario"> ¿No estás registrado? Crea tu cuenta</a>
                     <br><br>
                 </div>
@@ -65,9 +66,9 @@
     <div class="servicios-contacto">
         <div class="row around-lg">
             <!-- lista de planes 1 -->
-            <div id="divPla" class="col-xs-12 col-md-4">
-                <img src="img/imgPlanes.png" alt="Perrito al telefono" width="40%">
-                <h1 id="heart"> Básico</h1><br><br>
+            <div class="col-xs-12 col-md-4 divPla">
+                <img src="img/imgPlanes.png" alt="Perrito al telefono" style="width:40%">
+                <h1 class="heart"> Básico</h1><br><br>
                 <ul class="lista-planes">
                     <li>Item 1</li>
                     <li>Item 2</li>
@@ -76,12 +77,12 @@
                     <li>Item 5</li>
                 </ul>
                 <br><br>
-                <img src="img/webpay.jpg" alt="Perrito al telefono" width="50%">
+                <img src="img/webpay.jpg" alt="Perrito al telefono" style="width:50%">
             </div>
             <!-- lista de planes 2 -->
-            <div id="divPla" class="col-xs-12 col-md-4">
-                <img src="img/imgPlanes.png" alt="Perrito al telefono" width="40%">
-                <h1 id="heart"> Medio</h1><br><br>
+            <div class="col-xs-12 col-md-4 divPla">
+                <img src="img/imgPlanes.png" alt="Perrito al telefono" style="width:40%">
+                <h1 class="heart"> Medio</h1><br><br>
                 <ul class="lista-planes">
                     <li>Item 1</li>
                     <li>Item 2</li>
@@ -90,12 +91,12 @@
                     <li>Item 5</li>
                 </ul>
                 <br><br>
-                <img src="img/webpay.jpg" alt="Perrito al telefono" width="50%">
+                <img src="img/webpay.jpg" alt="Perrito al telefono" style="width:50%">
             </div>
             <!-- lista de planes 3 -->
             <div class="col-xs-12 col-md-4">
-                <img src="img/imgPlanes.png" alt="Perrito al telefono" width="40%">
-                <h1 id="heart"> Full</h1><br><br>
+                <img src="img/imgPlanes.png" alt="Perrito al telefono" style="width:40%">
+                <h1 class="heart"> Full</h1><br><br>
                 <ul class="lista-planes">
                     <li>Item 1</li>
                     <li>Item 2</li>
@@ -104,7 +105,7 @@
                     <li>Item 5</li>
                 </ul>
                 <br><br>
-                <img src="img/webpay.jpg" alt="Perrito al telefono" width="50%">
+                <img src="img/webpay.jpg" alt="Perrito al telefono" style="width:50%">
             </div>
         </div>
     </div>
@@ -114,10 +115,10 @@
             <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
             <h3>Inicia Sesión</h3>
             <h4>en nuestra plataforma</h4>
-            <form action="">
+            <form action="#">
                 <div class="contenedor-inputs">
-                    <input type="text" placeholder="Usuario">
-                    <input type="password" placeholder="Contraseña">
+                    <input type="text" placeholder="Usuario" id="userTxt">
+                    <input type="password" placeholder="Contraseña" id="userPwd">
                 </div>
                 <input type="submit" class="btn-submit" value="Entrar">
             </form>
@@ -125,7 +126,7 @@
     </div>
    <!-- footer de la página, compuesto por una imagen + datos de la veterinaria -->
    <div class="footer">
-    <img src="img/footer-bg.jpg" alt="" width="100%">
+    <img src="img/footer-bg.jpg" alt="" style="width:100%">
 </div>
 <div class="row footer-info col-xs-12">
     <!-- Aquí se contemplarán datos varios de la veterinaria en general -->
@@ -150,7 +151,8 @@
         <a href="https://www.cuidamelo.cl/">Encarga tu mascota</a><br>
         <a href="https://www.latam.com/es_cl/informacion-para-tu-viaje/como-viajar-con-tu-mascota/?ds_rl=1270154&ds_rl=1270154&gclid=EAIaIQobChMIm7ifybbq5AIVjQ2RCh3MIQZ-EAAYASAAEgIHmPD_BwE&gclsrc=aw.ds">Viaja con tu mascota</a>
     </div>
-        <script src="JS/scripts.js"></script>
+    <script src="JS/scripts.js"></script>
+</div>
 </body>
 
 </html>

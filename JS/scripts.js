@@ -21,6 +21,13 @@ btnAbrirPopup.addEventListener('click', function(){
 
 btnCerrarPopup.addEventListener('click', function(e){
 	e.preventDefault();
-	overlay.classList.remove('active');
-	popup.classList.remove('active');
+	overlay.classList.remove('active');//"escondemos" el overlay con su popup
+  popup.classList.remove('active');
+  $('#userTxt').val(''); // dejamos en blanco los input de usuario y contraseña al cerrar el popup
+  $('#userPwd').val('');
 });
+//opciones de galería lightbox
+lightbox.option({
+  'albumLabel':"",
+  wrapAround: true
+})
