@@ -113,3 +113,13 @@ $(function() {
           return dv;
         }
     }
+    $("#cel").on({
+      "focus": function(event) {
+        $(event.target).select();
+      },
+      "keyup": function(event) {
+        $(event.target).val(function(index, value) {
+          return value.replace(/[^-|+|\d]/g, "");
+        });
+      }
+    });
