@@ -39,6 +39,13 @@ a{
     font-size: 21px;
     font-family: 'lato', sans-serif;
 }
+
+.btn-abrir-popup::before{
+    font-family: "Font Awesome 5 Free";
+    content:  "\f007";
+    font-size: 22px;  
+    font-weight: 900;
+}
 .contenedor{
     max-width: 1490px;
     width: 98%;
@@ -175,14 +182,14 @@ margin-bottom: 10px;
     list-style: none;
     text-align: center;   
 }
-#divPla{
+.divPla{
     display: inline;
     border-right: solid 1px;
 }
 .full{
     border-right: none;
 }
-#heart::before{
+.heart::before{
     font-family: "Font Awesome 5 Free";
     content:  "\f21e";
     font-size: 25px;  
