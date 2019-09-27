@@ -485,4 +485,7 @@ color: deepskyblue;
     .item-2{
         padding-left: 16px;
     }
+    input, select{
+        width:100%;
+    }
 }
