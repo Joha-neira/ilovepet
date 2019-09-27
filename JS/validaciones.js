@@ -39,7 +39,7 @@ $(function() {
           },
           bday: {
             required: 'Ingresa una fecha',
-            max: 'La fecha no puede ser superior a la fecha actual'
+            max: 'Debe ser mayor de edad'
           },
           rut: {
             required: "Ingresa tu rut"
@@ -64,7 +64,7 @@ $(function() {
     var today = new Date();
     var dd = today.getDate();
     var mm = today.getMonth()+1;
-    var yyyy = today.getFullYear();
+    var yyyy = today.getFullYear()-18;
      if(dd<10){
             dd='0'+dd
         } 
@@ -120,6 +120,16 @@ $(function() {
       "keyup": function(event) {
         $(event.target).val(function(index, value) {
           return value.replace(/[^-|+|\d]/g, "");
+        });
+      }
+    });
+    $("#nombre").on({
+      "focus": function(event) {
+        $(event.target).select();
+      },
+      "keyup": function(event) {
+        $(event.target).val(function(index, value) {
+          return value.replace(/[^a-zA-Z]/g, "");
         });
       }
     });

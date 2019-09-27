@@ -146,6 +146,7 @@ margin-bottom: 10px;
     margin-top: -5px;
     color: #fff;
     font-family: 'lato';
+    height: 100%;
 }
 .footer-info .part1 , .part2{
     background: #6dd1fd;
@@ -156,7 +157,7 @@ margin-bottom: 10px;
 .footer-info .part3, .part2{
     padding:20px;
     background: #6dd1fd;
-    height: 150px;
+    height: 100%;
     left: 10%;
 }
 
